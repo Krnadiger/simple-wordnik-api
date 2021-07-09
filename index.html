@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Bootstrap jquery project</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="bootstrap.min.css">
+	<script src="jquery.min.js"></script>
+	<script src="bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="index.js"></script>
+</head>
+<body>
+<div class="accordion">Word Pronunciation</div>
+	<div class="box">
+		<div class="container">
+			<h4>Type any word to hear its pronunciation</h4>
+			<div>
+				<div style="width:70%; float: left;">
+					<input type="text" id="voiceword" class="audtext form-control" placeholder="Type any word without space"/>
+				</div>
+				<div style="width: 30%; float: left;">
+					<button type="button" value="Submit" class="btn btn-success" id="ButtonVoice" onclick="geTVoice()">Submit</button>
+				</div>
+			</div>
+			<div style="padding: 10px;">
+		
+			<audio id="player" controls autoplay>
+				<source id="audiovoice" type="audio/mpeg" src=".mp3">
+				Your browser does not support the audio element.
+			</audio>
+	</div>
+		</div>
+		
+	</div>
+</body>
+</html>
